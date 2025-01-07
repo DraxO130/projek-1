@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing</title>
+</head>
+<body>
+    <h1>Belajar JavaScript</h1>
+    <p>Selama setahun ini saya akan mendedikasikan untuk belajar dan fokus ke dalam programming</p>
+
+    <p id="coba">Coba tebak kalimat ini akan berubah apa ketika kamu klik tombol di bawah</p>
+    <button onclick="ajg()">Click me</button>
+
+    <p id="toxic">ini hanya web belajar saya. <b>click tombol di bawah untuk menghilangkan kalimat ini</b></p>
+    <button onclick="document.getElementById('toxic').style.display='none'">hapus</button>
+
+    <br>
+
+    <p id="baik" style="display: none;">Jiāyóu Artinya SEMANGAT!!!</p>
+    <button onclick="document.getElementById('baik').style.display='block'">tampilkan kalimat</button>
+
+    <br>
+
+    <p id="hasil"></p>
+    <button type="button" onclick="document.getElementById('hasil').innerHTML = 'fase belajar'">Coba</button>
+
+    <br>
+
+    <button onclick="document.getElementById('myImage').src='senang.jpg'">Adit Senang</button>
+    <img id="myImage" src="senang.jpg" style="width: 100px">
+
+    <button onclick="document.getElementById('myImage').src='sedih.jpg'">Adit Sedih</button>
+
+    <br>
+
+    
+    <p id='tampil1'></p>
+    <p id='tampil2'></p>
+    <button onclick="tampil()" >tampil</button>
+
+    <br>
+
+    <button onclick="window.print()">Print this page</button>
+
+    <br>
+
+    <button><a href="kalkulator.html">click</a></button>
+
+    <script src="test.js"></script>
+</body>
+</html>

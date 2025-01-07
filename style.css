@@ -1,0 +1,71 @@
+body {  
+    font-family: 'Arial', sans-serif;  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    height: 100vh;  
+    background-color: #e0e0e0;  
+    margin: 0;  
+}  
+
+.container {  
+    text-align: center;  
+    background: #ffffff;  
+    padding: 20px;  
+    border-radius: 10px;  
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);  
+    width: 320px; /* Width of calculator */  
+}  
+
+h1 {  
+    font-size: 24px;  
+    margin-bottom: 15px;  
+    color: #333;  
+}  
+
+input {  
+    width: 100%;  
+    height: 50px;  
+    font-size: 24px;  
+    margin-bottom: 15px;  
+    text-align: right;  
+    padding-right: 10px;  
+    border: 2px solid #007bff;  
+    border-radius: 5px;  
+    outline: none; /* Remove outline */  
+}  
+
+input:focus {  
+    border-color: #0056b3; /* Change border color on focus */  
+}  
+
+.buttons {  
+    display: grid;  
+    grid-template-columns: repeat(4, 1fr);  
+    gap: 10px;  
+}  
+
+button {  
+    height: 50px;  
+    font-size: 20px;  
+    border: none;  
+    border-radius: 5px;  
+    cursor: pointer;  
+    background-color: #007bff;  
+    color: white;  
+    transition: background-color 0.3s, transform 0.1s; /* Adding transition effects */  
+}  
+
+button:hover {  
+    background-color: #0056b3;  
+}  
+
+button:active {  
+    transform: scale(0.95); /* Effect on button press */  
+}  
+
+button:nth-child(1) { background-color: #dc3545; } /* Custom color for 'C' */  
+button:nth-child(1):hover { background-color: #c82333; }  
+
+button:nth-child(16) { background-color: #28a745; } /* Custom color for '=' */  
+button:nth-child(16):hover { background-color: #218838; }
